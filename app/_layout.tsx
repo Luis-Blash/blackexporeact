@@ -1,9 +1,18 @@
+import { useEffect } from "react";
 import "./global.css"
-import {Slot} from "expo-router";
+import {Slot, SplashScreen} from "expo-router";
 
-// Import your global CSS file
+// esperar el splash
+SplashScreen.preventAutoHideAsync()
 
 const RootLayout = () => {
+
+    useEffect(() => {
+        // splash listo
+        SplashScreen.hideAsync()
+    }, [])
+    
+
     return  <Slot />
 }
 
