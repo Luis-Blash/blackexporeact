@@ -7,8 +7,7 @@ const Home = () => {
     <SafeAreaView>
       <View className='mt-10 flex flex-col gap-4'>
         <CustomButton
-          className='bg-red-500 p-2'
-          textClassName='text-white'
+          color='primary'
           onPress={() => {
             router.push("/products")
           }}
@@ -16,8 +15,7 @@ const Home = () => {
           Productos
         </CustomButton>
         <CustomButton
-          className='bg-green-500 p-2'
-          textClassName='text-white'
+          color='secondary'
           onPress={() => {
             router.push("/settings")
           }}
